@@ -1,2 +1,16 @@
-<nav><a routerLink="">HOME</a> | <a routerLink="contacts">CONTACTS</a></nav>
+<nav>
+  <a
+    routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >HOME</a
+  >
+  |
+  <a
+    routerLink="contacts"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >CONTACTS</a
+  >
+</nav>
 <router-outlet></router-outlet>
